@@ -1,0 +1,142 @@
+:root{
+    --bgc: #023047;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+}
+
+.header{
+    position: relative;
+    background-color: var(--bgc);
+    text-align: center;
+    color: #fff;
+    height: 350px;
+}
+
+.banner{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.title{
+    margin-bottom: .4em;
+}
+
+.subtitle{
+    color: rgb(173, 168, 168);
+}
+
+.main{
+    padding: .5em 2em 1em;
+    width: 100%;
+}
+
+.form__title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.label{
+    font-weight: bold;
+}
+
+.box-form{
+    padding: 1em;
+    border: 1px solid inherit;
+    width: 100%;
+}
+
+.label,
+.box-form{
+    display: block;
+    margin-bottom: .8em;
+}
+
+.label--inline{
+    display: inline;
+}
+
+.terms--color{
+    text-decoration: underline;
+    color: var(--bgc);
+}
+
+.btn{
+    display: block;
+    background-color: var(--bgc);
+    margin-top: 1em;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: #fff; 
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 360px) {
+    
+    .header{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('Assets/Background.png');
+        background-size: cover;
+    }
+    
+    .container{
+        width: 370px;
+    }
+    .header{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .container{
+        flex-direction: row;
+        width: 50%;
+        border-radius: 5px;
+        border: 1px solid #aaa
+    }
+
+    .header,
+    .main{
+        width: 50%;
+    }
+
+    .header{
+        border-top-left-radius:5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .btn{
+        margin-top: 3em;
+    }
+}
+
+
